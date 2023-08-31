@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 :root {
   --bg-footer: #063183;
-  --bg-header: #E6F0FF;
-  --bg-feature: #F5FAFE;
-  --btn-primary: #0F1B4C;
+  --bg-header: #e6f0ff;
+  --bg-feature: #f5fafe;
+  --btn-primary: #0f1b4c;
   --section-padding: 80px;
-  --font-family: 'Poppins', sans-serif; }
+  --font-family: "Poppins", sans-serif; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth; }
 
 body {
@@ -28,7 +29,8 @@ body {
 a {
   text-decoration: none; }
 
-img, svg {
+img,
+svg {
   display: block; }
 
 .py {
@@ -128,14 +130,15 @@ branding section
 .branding__area--logo img {
   margin-block-end: 22px; }
 
-.branding__review--rating, .branding__review--feedback {
+.branding__review--rating,
+.branding__review--feedback {
   display: flex;
   justify-content: end; }
 
 .branding__review--rating {
   margin-block-end: 15px; }
   .branding__review--rating i {
-    color: #FFCA56; }
+    color: #ffca56; }
 
 .branding__logo {
   width: 100%;
@@ -154,7 +157,8 @@ branding section
 /* service-area */
 .service-area {
   padding-inline: 10vw; }
-  .service-area .section-title, .service-area .section-des {
+  .service-area .section-title,
+  .service-area .section-des {
     margin-inline: auto;
     text-align: center;
     padding-inline: 20%; }
@@ -182,14 +186,14 @@ branding section
     justify-content: center; }
 
 .right-arrow-link {
-  color: #0689FF; }
+  color: #0689ff; }
 
 .link .right-arrow-link {
   font-size: 18px;
   font-weight: 600; }
 
 .feature {
-  background: #F5FAFE;
+  background: #f5fafe;
   padding-block: 110px; }
   .feature .section-content {
     display: flex;
@@ -215,7 +219,7 @@ branding section
       .feature .feature-card .feature-content .feature-content-des p {
         font-size: 14px;
         font-weight: 500px;
-        color: #A3A6AB; }
+        color: #a3a6ab; }
   .feature .feature-icon-area {
     display: flex;
     justify-content: space-between;
@@ -227,7 +231,7 @@ branding section
       align-items: center;
       gap: 5px; }
       .feature .feature-icon-area .icon-area-content p {
-        color: #4D4D52;
+        color: #4d4d52;
         font-size: 14px;
         font-weight: 500; }
 
