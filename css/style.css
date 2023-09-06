@@ -36,10 +36,20 @@ svg {
 .py {
   padding-block: var(--section-padding); }
 
+.text-white {
+  color: #fff; }
+
+.text-center {
+  text-align: center; }
+
 .row {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 20px; }
+
+.col-3 {
+  width: 25%; }
 
 .col-4 {
   width: 33.3%; }
@@ -55,6 +65,15 @@ svg {
   padding-inline: 20px;
   padding-block: 10px;
   border-radius: 8px; }
+
+.title-bar::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #000339;
+  border-radius: 4px;
+  margin-block-end: 10px; }
 
 .header {
   position: fixed;
@@ -162,15 +181,8 @@ branding section
     margin-inline: auto;
     text-align: center;
     padding-inline: 20%; }
-  .service-area .section-title::before {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 4px;
-    background: #000339;
-    border-radius: 4px;
-    margin-inline: auto;
-    margin-block-end: 10px; }
+  .service-area .title-bar.center::before {
+    margin-inline: auto; }
   .service-area .service-content {
     margin-block-start: var(--section-padding);
     margin-block-end: 40px;
@@ -178,7 +190,8 @@ branding section
     flex-direction: column;
     align-items: center; }
     .service-area .service-content .service-title {
-      padding-block: 10px; }
+      padding-block: 10px;
+      font-size: 20px; }
     .service-area .service-content a span {
       margin-inline-start: 10px; }
   .service-area .service-btn {
@@ -186,7 +199,8 @@ branding section
     justify-content: center; }
 
 .right-arrow-link {
-  color: #0689ff; }
+  color: #0689ff;
+  font-size: 14px; }
 
 .link .right-arrow-link {
   font-size: 18px;
@@ -234,5 +248,109 @@ branding section
         color: #4d4d52;
         font-size: 14px;
         font-weight: 500; }
+
+h2.title {
+  font-size: 32px;
+  font-weight: 600; }
+
+h3.title {
+  font-size: 20px; }
+
+p.des {
+  font-size: 16px; }
+
+.col-6.w-60 {
+  width: 60%; }
+
+.neighborhood-image {
+  position: relative;
+  display: flex;
+  justify-content: end; }
+
+.neighborhood-image__content {
+  position: absolute;
+  width: 40%;
+  translate: 27% 0;
+  background: #ffffff;
+  left: 0;
+  border-radius: 8px 0px;
+  padding-block: 40px;
+  padding-inline: 15px; }
+  .neighborhood-image__content h2.title {
+    display: flex;
+    justify-content: space-between; }
+    .neighborhood-image__content h2.title span i {
+      color: #50D28A; }
+  .neighborhood-image__content p.des {
+    font-size: 14px;
+    padding-block: 10px; }
+
+.neighborhood-content {
+  padding-inline: 20%; }
+  .neighborhood-content h1.tilte {
+    font-size: 36px;
+    font-weight: 600; }
+  .neighborhood-content p.des {
+    font-size: 16px; }
+
+.counter {
+  text-align: center; }
+
+.feature-bottom {
+  background: var(--bg-footer); }
+  .feature-bottom .btn-white {
+    background: #fff;
+    color: var(--btn-primary); }
+  .feature-bottom .btn-group {
+    margin-block-start: 30px; }
+  .feature-bottom p.des {
+    color: #fff9; }
+
+.feature-bottom_image {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .feature-bottom_image img {
+    margin-block-start: -120px;
+    margin-block-end: -80px; }
+
+.footer p.des, .footer a {
+  color: #7A7A7E;
+  font-size: 16px; }
+.footer .row {
+  align-items: start; }
+.footer .list {
+  margin-block-start: 20px;
+  display: inline-flex;
+  flex-direction: column; }
+  .footer .list a:not(:last-child) {
+    margin-block-end: 5px; }
+.footer .details {
+  margin-block-start: 20px; }
+.footer .social-link {
+  margin-block-start: 20px;
+  display: flex;
+  text-align: center; }
+  .footer .social-link a {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #292828;
+    background: #fafafc;
+    transition: .3s; }
+  .footer .social-link :not(:last-child) {
+    margin-inline-end: 25px; }
+  .footer .social-link :hover {
+    background: #dfe0e1; }
+.footer .row.footer-bottom {
+  margin-block-start: 60px; }
+.footer .copyright-text {
+  display: flex;
+  justify-content: end; }
+  .footer .copyright-text p.des {
+    font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */
